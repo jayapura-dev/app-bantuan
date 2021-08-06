@@ -7,7 +7,7 @@
     <title><?php echo $title ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/img/logo/bksda1.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/img/logo/1.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/font-awesome.min.css">
@@ -34,9 +34,9 @@
         <div class="left-sidebar-pro">
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <a href="<?php echo base_url()?>home"><img src="<?php echo base_url()?>assets/img/message/users1.png" alt="" />
+                    <a href="<?php echo base_url()?>Dashboard"><img src="<?php echo base_url()?>assets/img/logo/1.png" alt="" />
                     </a>
-                    <h3 class="uppercase">READ-K.4</h3>
+                    <h3 class="uppercase">APP</h3>
                     <?php if ($this->session->userdata('level') == '1'):?>
                     <p>Administrator</p>
                   <?php endif ?>
@@ -76,7 +76,7 @@
                             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                                 <div class="header-right-info">
                                     <ul class="nav navbar-nav mai-top-nav header-right-menu">
-                                        <?php $this->load->view('reminder') ?>
+                                        
                                         <li class="nav-item">
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                 <span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>
@@ -86,7 +86,7 @@
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
                                                 <li><a href="<?php echo base_url()?>home/hukum"><span class="adminpro-icon adminpro-settings author-log-ic"></span>File Hukum</a>
                                                 </li>
-                                                <li><a href="<?php echo base_url()?>auth/logout"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
+                                                <li><a href="<?php echo base_url()?>Auth/logout"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -119,7 +119,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-copy-right">
-                        <p>Created By Diah Warastuti deweq</a></p>
+                        <p>Created By Burkassss</a></p>
                     </div>
                 </div>
             </div>

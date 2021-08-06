@@ -1,112 +1,97 @@
-<style>
-    body{
-        background: url(<?php echo base_url('assets/login/images/login-bg1.jpg') ?>) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        margin: 0; padding: 0;
-    }
-    .footer{
-        position: fixed;
-        width: 100%;
-        background: #000;
-        color: #fff;
-        bottom: 0px;
-        font-family: calibri, sans-serif, arial;
-        font-size: 12px;
-        text-align: center;
-        padding: 8px;
-        opacity: 0.5;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><?php echo $title ?></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/login/images/icons/faviconp.png">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 
-    .container{
-        position: fixed;
-        width: 670px;
-        top:50px; bottom: 80px; left:100px;
-    }
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(assets/login/images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						LOGIN BACKEND
+					</span>
+				</div>
+				<form class="login100-form validate-form" method="post" action="<?php echo base_url()?>Auth/login_post">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="nama" placeholder="Enter username">
+						<span class="focus-input100"></span>
+					</div>
 
-    .container td{
-        font-family: calibri, sans-serif;
-        color: #fff;
-        font-size: 21px;
-    }
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="sandi" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
 
-    .container .left{
-        background: url(http://read-k4.com/assets/login/images/green-bg.png);
-        padding: 20px;
-    }
+					<div class="flex-sb-m w-full p-b-30">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
 
-    .container .right{
-        background: url(https://qualita-indonesia.net/resources/themes/template-simple/images/bg-transparent-white.png);
-        padding: 60px;
-        color: #333;
-    }
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
 
-   input{
-       padding: 10px;
-       margin-bottom: 10px;
-       width: 100%;
-       border: 1px solid #ccc;
-   }
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+				</form>
+				<?php echo form_close();?>
+			</div>
+		</div>
+	</div>
 
-   .btn{
-       border: 1px solid transparent;
-       border-radius: 3px;
-       background: #1990db;
-       padding: 7px;
-       font-weight: bold;
-       color:#fff;
-   }
-</style>
+<!--===============================================================================================-->
+	<script src="<?php echo base_url()?>assets/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo base_url()?>assets/login/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo base_url()?>assets/login/vendor/bootstrap/js/popper.js"></script>
+	<script src="<?php echo base_url()?>assets/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo base_url()?>assets/login/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo base_url()?>assets/login/vendor/daterangepicker/moment.min.js"></script>
+	<script src="<?php echo base_url()?>assets/login/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo base_url()?>assets/login/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo base_url()?>assets/login/js/main.js"></script>
 
-<div class="container">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" height='100%'>
-        <tr>
-            <td class="left">
-                <img src="<?php echo base_url()?>assets/img/logo/bksda1.png" width="120px">
-                <img src="<?php echo base_url()?>assets/img/logo/bbksdapapua.png" width ="120px"><br/>
-                <div style="border-bottom: 1px solid #222; margin: 15px 0px"></div>
-<!--                <span style="font-size: 30px; ">Welcome To Quest</span><br>
-                Qualita Integrated System
-                <p>
-                    I Never Think Of The Future, It Comes Soon Enough
-                    <span style="font-size: 15px;"><br><i>(Albert Einstein)</i></span>
-                </p>-->
-
-
-                <p style="font-size: 14px; color: #010101">
-                    <b>Address: </b><br>
-                    Jl. Raya Abepura - Sentani<br>
-                    Jayapura 99351 Indonesia.<br>
-                    Tel / Fax (0967 5170465)<br>
-                    Fax.
-                    E-mail  : admin@read-k4.com<br>
-                    <br>
-                </p>
-                <br>
-            </td>
-            <td width="250" class="right">
-                <div style="font-size: 35px; line-height: 20px">READ-K.4</div>
-
-                <div style="border-bottom: 1px solid #ccc; margin: 15px 0px"></div>
-								<?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
-        				<?php echo form_open('auth/login_proses'); ?>
-                <form>
-                    <input type="text" name="nip" value="" placeholder="NIP">
-                    <input type="password" name="sandi" value="" placeholder="Password">
-                    <input type="submit" name="commit" value="Login" class="btn">
-                    <div style="font-size: 13px; text-align: center">
-                        <input type="checkbox" name="remember_me" id="remember_me" style="width: 20px;">Ingat Saya <br>
-                        LOGIN PENGGUNA
-                    </div>
-                </form>
-								<?php echo form_close();?>
-            </td>
-        </tr>
-    </table>
-</div>
-
-<div class="footer">
-    <span style="opacity: 1;">Read-K.4 | BBKSDA Papua &copy; 2019 | Email : admin@read-k4.com</span>
-</div>
+</body>
+</html>
